@@ -1,0 +1,22 @@
+{
+    "name": "nfservice/fugzap",
+    "description": "Biblioteca base para comunicaçao com a API do Fugzap",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+      "psr-4": {
+        "NFService\\": "src/"
+      }
+    },
+    "authors": [
+      {
+        "name": "Henrique Ernandes",
+        "email": "rebeloehenrique@hotmail.com"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
+  }
