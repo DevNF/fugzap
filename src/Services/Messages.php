@@ -17,7 +17,7 @@ class Messages
     /**
      * @param string $number
      * @param string $message
-     * @return array
+     * @return \stdClass
      * @throws \Exception
      */
     public function sendMessage(string $number, string $message, array $params = [])
@@ -33,7 +33,7 @@ class Messages
     /**
      * @param string $number
      * @param string $mediaPath
-     * @return array
+     * @return \stdClass
      * @throws \Exception
      */
     public function sendMediaMessage(string $number, string $mediaPath, array $params = [])
