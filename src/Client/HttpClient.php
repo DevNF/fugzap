@@ -22,7 +22,7 @@ class HttpClient
         $this->debug = $debug;
     }
 
-    public function requisicao(string $uri, string $metodo, ?array $corpo = null, ?array $params = null, ?string $contentType = 'json'): string | GuzzleException | array | stdClass | null
+    public function requisicao(string $uri, string $metodo, ?array $corpo = null, ?array $params = null, ?string $contentType = 'json')
     {
         try {
             $client = new \GuzzleHttp\Client();

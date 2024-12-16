@@ -51,10 +51,11 @@ class Messages
         ]);
 
         return $this->client->requisicao(
-            uri: '/messages/send',
-            metodo: 'POST',
-            corpo: $body,
-            contentType: 'multipart'
+            '/messages/send',
+             'POST',
+             $body,
+             null,
+             'multipart'
         );
     }
 }
