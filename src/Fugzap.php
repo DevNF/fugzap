@@ -9,9 +9,9 @@ use NFService\Services\Messages;
 
 class Fugzap
 {
-    protected string $base_url;
-    protected string $token;
-    protected HttpClient $client;
+    protected $base_url;
+    protected $token;
+    protected $client;
 
     public function __construct(
         string $token,

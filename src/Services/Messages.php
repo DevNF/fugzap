@@ -7,7 +7,7 @@ use NFService\Fugzap;
 
 class Messages
 {
-    protected HttpClient $client;
+    protected $client;
 
     public function __construct(Fugzap $fugzap)
     {
@@ -51,10 +51,11 @@ class Messages
         ]);
 
         return $this->client->requisicao(
-            uri: '/messages/send',
-            metodo: 'POST',
-            corpo: $body,
-            contentType: 'multipart'
+             '/messages/send',
+             'POST',
+             $body,
+             null,
+             'multipart'
         );
     }
 }
